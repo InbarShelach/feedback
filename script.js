@@ -324,31 +324,14 @@ const eleventhPage = () => {
         document.getElementById("eleventh-page").style.display = "none";
         document.getElementById("twelfth-page").style.display = "block";
         twelfthPage();
-        // lastPage();
     })
 }
-
-// const findJob = (i) => {
-//     for (let index = 0; index < JOBS.length; index++) {
-//         if(JOBS[i].charAt(6) === index) {
-//             return index;
-//         }
-//     }
-// }
-
-
-    // document.getElementById("eleventh-page").style.display = "none";
-    // document.getElementById("last-page").style.display = "block";
-    // document.getElementById("next-button-last").addEventListener("click", () => {
-    //     document.getElementById("last-page").style.display = "none";
-    //     document.getElementById("first-page").style.display = "block";
-    //     clickCounter = 0;
-    // })
 
 const twelfthPage = () => {
     document.getElementById("next-button-twelfth").addEventListener("click", () => {
         document.getElementById("twelfth-page-text").style.fontSize= "4vw";
         document.getElementById("twelfth-page-title").style.display = "none";
         document.getElementById("twelfth-page-text").innerText="כל הכבוד! סיימת את הלומדה!";
+        document.getElementById("credit").style.display = "block";
     })
 }

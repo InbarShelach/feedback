@@ -1724,3 +1724,14 @@ label:hover :checked + .card {
     transform: scale(1.1);
 }
 
+.credit {
+    position: absolute;
+    color: rgb(102, 83, 95);
+    font-family: BlenderConsensed;
+    font-size: 1vw;
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+    display: none;
+}
+
