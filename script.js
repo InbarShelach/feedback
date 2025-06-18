@@ -136,6 +136,7 @@ const sixthPage = () => {
         document.getElementById("first-part-sixth").style.display = "none";
         document.getElementById("second-part-sixth").style.display = "block";
     })
+    let next = 0;
     for (let i = 1; i < 5; i++) {
         document.getElementById(`card${i}`).addEventListener("click", () => {
             cardCount++;
@@ -146,7 +147,7 @@ const sixthPage = () => {
                 document.getElementById("card4").style.display = "block";
                 document.getElementById("text-card4-1").style.display = "block";
                 document.getElementById("text-card4-2").style.display = "block";
-                let next = 0;
+                
                 document.getElementById("next-text-button").style.display = "block";
                 document.getElementById("next-text-button").addEventListener("click", () => { 
                     next++;

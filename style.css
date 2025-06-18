@@ -231,6 +231,17 @@ body {
 
 }
 
+.file-text {
+    position: absolute;
+    color: rgb(87, 83, 85);
+    font-family: BlenderConsensed;
+    font-size: 1vw;
+    text-align: center;
+    width: 80%;
+    bottom: 2%;
+    right: 8%;
+}
+
 .juneBox {
     height: 17%;
     width: 15%;
@@ -1383,15 +1394,13 @@ label:hover :checked + .card {
 
 .second-part-second-title {
     position: absolute;
-    color:  rgb(250, 208, 196);
+    color:  rgb(158, 114, 143);
     font-family: Flamingo FM;
     font-size: 2vw;
     width: 45%;
     text-align: center;
     right: 28%;
     top: 18%;
-    -webkit-text-stroke-color: rgba(34, 24, 24, 0.479);
-    -webkit-text-stroke-width: 0.8px;
 }
 
 .third-part-tenth {
@@ -1486,7 +1495,7 @@ label:hover :checked + .card {
 
 .eleventh-page-title2 {
     position: absolute;
-    color:  rgb(197, 153, 182);
+    color:  rgb(134, 102, 124);
     font-family: Flamingo FM;
     font-size: 1.5vw;
     width: 45%;
@@ -1675,7 +1684,9 @@ label:hover :checked + .card {
     font-size: 1.5vw;
     width: 5%;
     text-align: center;
-    left: 47.5%;
+    /* left: 47.5%;
+     */
+    left: 3%;
     bottom: 3%;
     display: none;
      transition: all .2s ease-in-out;
