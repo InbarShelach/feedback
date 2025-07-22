@@ -1,0 +1,1737 @@
+@font-face {
+    font-family: Klugman FM;
+    src: url("Assets/fonts/klugman-regular-fm.ttf");
+}
+
+@font-face {
+    font-family: Flamingo FM;
+    src: url("Assets/fonts/flamingo-regular-fm.ttf");
+}
+
+@font-face {
+    font-family: BlenderConsensed;
+    src: url("Assets/fonts/BlenderConsensed-Black.otf");
+}
+
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+}
+
+.first-page {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(197, 153, 182);
+    /* display: none; */
+}
+
+.title-first-page {
+    color: rgb(103, 57, 87);
+    font-family: Klugman FM;
+    font-size: 7vw;
+    position: absolute;
+    height: 30%;
+    width: 50%;
+    text-align: center;
+    right: 23%;
+    top: 10%;
+}
+
+.arrows {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.start-button {
+    position: absolute;
+    height: 5%;
+    width: 10%;
+    background-color: rgb(250, 208, 196);
+    color:  rgb(197, 153, 182);
+    border-radius: 12px;
+    font-family: BlenderConsensed;
+    font-size: 300%;
+    text-align: center;
+    padding-bottom: 0.5%;
+    right: 43%;
+    top: 43%;
+    transition: all .2s ease-in-out;
+}
+
+.start-button:hover {
+    color:   rgb(250, 208, 196);
+    background-color: rgb(103, 57, 87);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.second-page {
+  /* display: none; */
+  height: 100%;
+  width: 100%;
+  background-color: rgb(197, 153, 182);
+  color:  rgb(103, 57, 87);
+  display: none;
+}
+
+.intro {
+    position: absolute;
+    background-image: url("Assets/images/sixthPage/Rectangle 28.png");
+    background-size: 100% 100%;
+    right: 10%;
+    top: 10%;
+    height: 80%;
+    width: 80%;
+    direction: rtl;
+    font-family: BlenderConsensed;
+    font-size: 2vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-text {
+    position: relative;
+    width: 80%;
+}
+
+.next-button-second {
+    position: absolute;
+    font-family: BlenderConsensed;
+    direction: rtl;
+    font-size: 1.5vw;
+    left: 10%;
+    bottom: 10%;
+    transition: all .2s ease-in-out;
+}
+
+.next-button-second:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.third-page {
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(250, 208, 196);
+    display: none;
+}
+
+.title-third-page {
+    height: 10%;
+    width: 35%;
+    position: absolute;
+    direction: rtl;
+    font-family: Klugman FM;
+    color:  rgb(103, 57, 87);
+    font-size: 3vw;
+    right: 33%;
+    text-align: center;
+    top: 8%;
+}
+
+.trail {
+    position: absolute;
+    background-image: url("Assets/images/thirdPage/dashedLine.svg");
+    height: 60%;
+    width: 100%;
+    top: 15%;
+    background-size: 100% 100%;
+}
+
+.month {
+    position: relative;
+    height: 15%;
+    transition: all .2s ease-in-out;
+}
+
+.month:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.may {
+    left: 88%;
+    top: -4%;
+}
+
+.june {
+    left: 67%;
+    top: 25%;
+}
+
+.september {
+    left: 45%;
+    top: 55%;
+}
+
+.october {
+    left: 17%;
+    top: 59%;
+}
+
+.november {
+    left: -6%;
+    top: 88%;
+}
+
+.december {
+    left: -16%;
+    top: 88%;
+}
+
+.instraction {
+    position: absolute;
+    height: 10%;
+    width: 20%;
+    right: 38%;
+    text-align: center;
+    bottom: 1%;
+    font-family: Flamingo FM;
+    color:  rgb(103, 57, 87);
+    font-size: 150%;
+    animation-name: instractionText;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    direction: rtl;
+}
+
+@keyframes instractionText {
+    33% {font-size: 150%;}
+    66% {font-size: 200%;}
+    100% {font-size: 150%;}
+}
+
+.box {
+    direction: rtl;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    font-family: BlenderConsensed;
+    padding: 5px 2px 2px 2px;
+    padding-left: 3%;
+    padding-top: 15px;
+    padding-right: 20px;
+    font-size: 1.3vw;
+    display: none;
+}
+
+.mayBox {
+    height: 15%;
+    width: 14%;
+    right: 2%;
+    top: 23%; 
+
+}
+
+.file-text {
+    position: absolute;
+    color: rgb(87, 83, 85);
+    font-family: BlenderConsensed;
+    font-size: 1vw;
+    text-align: center;
+    width: 80%;
+    bottom: 2%;
+    right: 8%;
+}
+
+.juneBox {
+    height: 17%;
+    width: 15%;
+    right: 29%;
+    top: 22%;
+}
+
+.septemberBox {
+    height: 20%;
+    width: 15%;
+    right: 35%;
+    top: 58%;
+}
+
+.octoberBox {
+    height: 20%;
+    width: 15%;
+    right: 69%;
+    top: 36%;
+}
+
+.novemberBox {
+    height: 15%;
+    width: 15%;
+    right: 79%;
+    top: 78%;
+}
+
+.file-icon {
+    position: absolute;
+    background-image: url("Assets/images/files/filesIcon.svg");
+    background-size: 100% 100%;
+    height: 25%;
+    width: 25%;
+    transition: all .2s ease-in-out;
+}
+
+.file-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.back-button {
+    position: absolute;
+    direction: rtl;
+    color: white;
+    font-family: BlenderConsensed;
+    font-size: 2vw;
+    left: 8%;
+    bottom: 8%;
+    width: 10%;
+    text-align: center;
+    height: 5%;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(103, 57, 87);
+    transition: all .2s ease-in-out;
+    z-index: 200;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.manager-may {
+    left: 3%;
+    top: 8%;
+}
+
+.worker-may {
+    left: 3%;
+    top: 55%;
+}
+
+.interview-file {
+    left: 1%;
+    top: 60%;
+    height: 23%;
+    width: 23%;
+}
+
+.cover-page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(197, 153, 182);
+    display: none;
+    z-index: 101;
+    opacity: 70%;
+}
+
+.manager-file-image {
+    position: absolute;
+    background-image: url("Assets/images/files/טופס מנהל ספטמבר.png");
+    background-size: 100% 100%;
+    height: 90%;
+    width: 36%;
+    right: 33%;
+    top: 5%;
+    display: none;
+    z-index: 102;
+}
+
+.worker-file-image {
+    position: absolute;
+    background-image: url("Assets/images/files/צילום מסך 2025-06-12 081524.png");
+    background-size: 100% 100%;
+    height: 90%;
+    width: 36%;
+    right: 33%;
+    top: 5%;
+    display: none;
+    z-index: 102;
+}
+
+.assessment-file-image {
+    position: absolute;
+    background-image: url("Assets/images/files/טופס סיכום שיחת הערכה מקצועית.png");
+    background-size: 100% 100%;
+    height: 90%;
+    width: 36%;
+    right: 33%;
+    top: 5%;
+    display: none;
+    z-index: 102;
+}
+
+.feedback-file-image {
+    position: absolute;
+    background-image: url("Assets/images/files/שיחת משוב עמידה ביעדים.png");
+    background-size: 100% 100%;
+    height: 60%;
+    width: 56%;
+    right: 24%;
+    top: 15%;
+    display: none;
+    z-index: 102;
+}
+
+.x-button {
+    position: absolute;
+    height: 3%;
+    right: 2%;
+    top: 2%;
+    transition: all .2s ease-in-out;
+}
+
+.x-button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.forth-page {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(250, 208, 196);
+    display: none;
+}
+
+.textBackground {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    height: 80%;
+    width: 80%;
+    background-image: url("Assets/images/forthPage/textBackground.svg");
+    background-size: 100% 100%;
+    /* display: none; */
+}
+
+.title-forth-page {
+    position: absolute;
+    color: white;
+    font-family: Klugman FM;
+    font-size: 4vw;
+    width: 40%;
+    text-align: center;
+    right: 30%;
+    top: 10%;
+}
+
+.forth-page-text {
+    position: absolute;
+    direction: rtl;
+    color: white;
+    font-family: BlenderConsensed;
+    width: 80%;
+    right: 10%;
+    top: 35%;
+    font-size: 2.3vw;
+    text-align: center;
+}
+
+.next-button-forth {
+    position: absolute;
+    color: white;
+    font-family: BlenderConsensed;
+    direction: rtl;
+    font-size: 150%;
+    left: 10%;
+    bottom: 12%;
+    transition: all .2s ease-in-out;
+}
+
+.next-button-forth:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.goals {
+    position: absolute;
+    color: white;
+    direction: rtl;
+    font-family: BlenderConsensed;
+    font-size: 2vw;
+    top: 30%;
+    width: 80%;
+    right: 10%;
+    text-align: right;
+    line-height: 230%;
+    display: none;
+}
+
+.icon-container {
+    position: absolute;
+    display: flex;
+    height: 50%;
+    width: 5%;
+    flex-direction: column;
+    right: 3%;
+    top: 28%;
+    display: none;
+}
+
+.icon {
+    height: 5%;
+    width: 4%;
+    margin-left: 2%;
+}
+
+.second-part {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: none;
+}
+
+.second-part-title {
+    height: 10%;
+    width: 70%;
+    position: absolute;
+    right: 15%;
+    text-align: center;
+    font-family: Klugman FM;
+    font-size: 3vw;
+    color:  rgb(103, 57, 87);
+    top: 12%;
+    direction: rtl;
+}
+
+.scales {
+    position: absolute;
+    height: 30%;
+    bottom: 0;
+    right: 28%;
+    cursor: pointer;
+}
+
+.scale-place {
+    position: relative;
+    left: 55%;
+    top: 62%;
+    background-color: rgb(230, 178, 186);
+    height: 7%;
+    width: 20%;
+    color: white;
+    font-family: BlenderConsensed;
+    border-radius: 8px;
+    font-size: 2vw;
+    text-align: center;
+    border: solid 1px rgb(103, 57, 87);
+    cursor: default;
+}
+
+.tooltip {
+    position: relative;
+    display: none;
+}
+
+.tooltip .tooltiptext { 
+    visibility: hidden;
+    width: 70%;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    right: 110%;
+    background-color: rgba(112, 116, 116, 0.377);
+    font-size: 60%;
+    color: black;
+    direction: rtl;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptextleft { 
+    visibility: hidden;
+    width: 70%;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    left: 110%;
+    background-color: rgba(112, 116, 116, 0.377);
+    font-size: 60%;
+    color: black;
+    direction: rtl;
+}
+.tooltip:hover .tooltiptextleft {
+    visibility: visible;
+}
+
+.pro1 {
+    left: 20%;
+    top: 76.5%;
+    width: 25%;
+}
+
+.pro2 {
+    left: -4%;
+    top: 69.3%;
+    width: 25%;
+}
+
+.pro3 {
+    left: -28%;
+    top: 62.2%;
+    width: 27%;
+    /* transform: rotate(-8deg); */
+}
+
+.pro4 {
+    left: 20%;
+    top: 47.7%;
+    width: 27%;
+}
+
+.pro5 {
+    left: 56%;
+    top: 48.3%;
+}
+
+.pro6 {
+    left: 35%;
+    top: 41%;
+    width: 26%;
+    /* transform: rotate(6deg); */
+}
+
+.pro7 {
+    left: 11%;
+    top: 33.9%;
+    width: 25%;
+}
+
+.pro9 {
+    left: -4%;
+    top: 40.5%;
+}
+.pro10 {
+    left: -25%;
+    top: 33.2%;
+}
+.pro11 {
+    left: -45%;
+    top: 26%;
+}
+
+.pro12 {
+    left: 55%;
+    top: 12.5%;
+    width: 26%;
+}
+.pro13 {
+    left: 30%;
+    top: 5.4%;
+    width: 26%;
+}
+.pro14 {
+    left: 5%;
+    top: -1.8%;
+    width: 26%;
+}
+
+.pro8 {
+    left: -10%;
+    top: 26.8%;
+}
+
+.change-color {
+    color: rgb(103, 57, 87);
+    top: 91%;
+}
+
+.fifth-page {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230, 178, 186);
+    display: none;
+}
+
+.textBackground-fifth{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    height: 80%;
+    width: 80%;
+    background-image: url("Assets/images/fifthPage/textbackground-fifth.svg");
+    background-size: 100% 100%;
+}
+
+.title-fifth-page {
+    position: absolute;
+    color: rgb(103, 57, 87);
+    font-family: Klugman FM;
+    font-size: 4vw;
+    width: 45%;
+    text-align: center;
+    right: 28%;
+    top: 10%;
+}
+
+.secondtitle-fifth-page {
+    position: absolute;
+    color:  rgb(228, 158, 168);
+    font-family: Flamingo FM;
+    font-size: 2vw;
+    width: 45%;
+    text-align: center;
+    right: 28%;
+    top: 20%;
+    -webkit-text-stroke-color: rgba(34, 24, 24, 0.479);
+    -webkit-text-stroke-width: 0.8px;
+}
+
+.fifth-page-text {
+    position: absolute;
+    direction: rtl;
+    color: rgb(103, 57, 87);
+    font-family: BlenderConsensed;
+    width: 80%;
+    right: 10%;
+    top: 35%;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.next-button-fifth {
+    position: absolute;
+    color: rgb(103, 57, 87);
+    font-family: BlenderConsensed;
+    direction: rtl;
+    font-size: 150%;
+    left: 10%;
+    bottom: 10%;
+    transition: all .2s ease-in-out;
+}
+
+.next-button-fifth:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.seventh-page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(197, 153, 182);
+    direction: rtl;
+    display: none;
+}
+
+.next-button-seventh {
+ position: absolute;
+    color: white;
+    font-family: BlenderConsensed;
+    direction: rtl;
+    font-size: 150%;
+    left: 5%;
+    bottom: 5%;
+    transition: all .2s ease-in-out;
+}
+
+.next-button-seventh:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.title-seventh-page {
+    position: absolute;
+    color: rgb(103, 57, 87);
+    font-family: Klugman FM;
+    font-size: 4vw;
+    width: 50%;
+    text-align: center;
+    right: 25%;
+    top: 10%;
+}
+
+.sandwich {
+    position: absolute;
+    height: 80%;
+    top: 15%;
+}
+
+/* flipcard */
+:root {
+    --first-color: rgb(230, 178, 186);
+    --second-color: rgb(250, 208, 196);
+}
+
+div.card-container {
+    position: absolute;
+    top: 28%;
+    right: 30%;
+    height: 13%;
+    width: 60%;
+    border-radius: 20px;
+    perspective: 1000px;
+    
+    /* border: 2px solid var(--first-color); */
+    float: left;
+    margin: 0 25px;
+
+    & div.card-content {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s linear 1ms;
+    }
+
+    & div.card-front, div.card-back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        border-radius: 20px;
+        color: white;
+        font-family: BlenderConsensed;
+        font-size: 2vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;
+    }
+    & div.card-front {
+        background-color: var(--first-color);
+    }
+    & div.card-back {
+        background-color: var(--second-color);
+        transform: rotateX(180deg);
+        color: black;
+    }
+    & div.card-front img, div.card-back img {
+        width: 100%;
+        height: 100%;
+    }
+}
+div.card-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.card-container:hover div.card-content {
+    transform: rotateX(180deg);
+}
+
+:root {
+    --first-color: rgb(230, 178, 186);
+    --second-color: rgb(250, 208, 196);
+}
+
+div.card-container2 {
+    position: absolute;
+    top: 43%;
+    right: 30%;
+    height: 30%;
+    width: 60%;
+    border-radius: 20px;
+    perspective: 1000px;
+    /* border: 2px solid var(--first-color); */
+    float: left;
+    margin: 0 25px;
+
+    & div.card-content {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s linear 1ms;
+    }
+
+    & div.card-front, div.card-back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        border-radius: 20px;
+        color: white;
+        font-family: BlenderConsensed;
+        font-size: 2vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;  
+    }
+    & div.card-front {
+        background-color: var(--first-color);
+    }
+    & div.card-back {
+        background-color: var(--second-color);
+        transform: rotateX(180deg);
+        color: black;
+    }
+    & div.card-front img, div.card-back img {
+        width: 100%;
+        height: 100%;
+    }
+}
+div.card-container2::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.card-container2:hover div.card-content {
+    transform: rotateX(180deg);
+}
+
+:root {
+    --first-color: rgb(230, 178, 186);
+    --second-color: rgb(250, 208, 196);
+}
+
+div.card-container3 {
+    position: absolute;
+    top: 75%;
+    right: 30%;
+    height: 13%;
+    width: 60%;
+    border-radius: 20px;
+    perspective: 1000px;
+    /* border: 2px solid var(--first-color); */
+    float: left;
+    margin: 0 25px;
+
+    & div.card-content {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s linear 1ms;
+    }
+
+    & div.card-front, div.card-back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        border-radius: 20px;
+        color: white;
+        font-family: BlenderConsensed;
+        font-size: 2vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;
+    }
+    & div.card-front {
+        background-color: var(--first-color);
+    }
+    & div.card-back {
+        background-color: var(--second-color);
+        transform: rotateX(180deg);
+        color: black;
+    }
+    & div.card-front img, div.card-back img {
+        width: 100%;
+        height: 100%;
+    }
+}
+div.card-container3::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.card-container3:hover div.card-content {
+    transform: rotateX(180deg);
+}
+/* flipcard*/
+
+.ninth-page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(250, 208, 196);;
+    direction: rtl;
+    display: none;
+}
+
+.table-background {
+    position: absolute;
+    height: 30%;
+    width: 50%;
+    background-image: url("Assets/images/ninthPage/table.svg");
+    background-size: 100% 100%;
+    top: 27%;
+    right: 25%;
+}
+
+.persons-container {
+    position: absolute;
+    height: 40%;
+    width: 85%;
+    bottom: 0;
+    right: 10%;
+    direction: rtl;
+}
+
+.person {
+    position: relative;
+    left: 0;
+    height: 100%;
+    margin-left: 2%;
+}
+
+.person6 {
+    margin-left: 1%;
+}
+
+.flipcard-container2 {
+    height: 66%;
+    width: 90%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    border: solid 2px rgb(103, 57, 87);
+}
+
+
+
+.sixth-page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(197, 153, 182);
+    background-image: url("Assets/images/sixthPage/smilyBackground.svg");
+    background-size: 100% 100%;
+    display: none;
+}
+
+.first-part-sixth {
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    height: 70%;
+    width: 80%;
+    background-image: url("Assets/images/sixthPage/Rectangle 28.png");
+    background-size: 100% 100%;
+    /* display: none; */
+}
+
+.title-forth-page {
+    position: absolute;
+    color: white;
+    font-family: Klugman FM;
+    font-size: 4vw;
+    width: 40%;
+    text-align: center;
+    right: 30%;
+    top: 10%;
+}
+
+.second-part-sixth {
+    display: none;
+}
+
+.cards-container {
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    right: 2.5%;
+    top: 2.5%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* display: none; */
+}
+
+
+
+/* .card {
+    position: relative;
+    height: 40%;
+    width: 34%;
+    background-image: url("Assets/images/sixthPage/Rectangle 28.png");
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Klugman FM;
+    font-size: 4vw;
+    color: rgb(103, 57, 87);
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+} */
+
+.card-six {
+    position: relative;
+    height: 40%;
+    width: 34%;
+    background-image: url("Assets/images/sixthPage/Rectangle 28.png");
+    background-size: 100% 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Klugman FM;
+    font-size: 4vw;
+    color: rgb(103, 57, 87);
+    cursor: pointer;
+    /* animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1; */
+}
+
+/* .card3 {
+    position: relative;
+    display: block;
+} */
+
+.circle-button {
+    position: absolute;
+    background-image: url("Assets/images/sixthPage/עיגול.svg");
+    background-size: 100% 100%;
+    height: 20%;
+    width: 20%;
+    right: 40%;
+    top: 37%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Klugman FM;
+    font-size: 2vw;
+    color: white;
+    direction: rtl;
+}
+
+/* .card {
+    position: relative;
+    height: 40%;
+    width: 34%;
+    background-image: url("Assets/images/sixthPage/Rectangle 28.png");
+    background-size: 100% 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3%;
+    font-family: Klugman FM;
+    font-size: 2vw;
+    color: rgb(103, 57, 87);;
+} */
+
+.text-card {
+    position: absolute;
+    height: 40%;
+    width: 30%;
+    direction: rtl;
+    font-family: BlenderConsensed;
+    font-size: 1.5vw;
+    z-index: 100;
+    display: none;
+}
+
+.text-card1 {
+    right: 10%;
+    top: 15%;
+}
+
+.text-card2 {
+    right: 60%;
+    top: 15%;
+}
+
+.text-card3 {
+    right: 10%;
+    top: 65%;
+}
+.text-card4-1 {
+    right: 60%;
+    top: 65%;
+    height: 7%;
+}
+
+.text-card4-2 {
+    right: 60%;
+    top: 78%;
+    height: 7%;
+}
+
+.next-text-button {
+    position: absolute;
+    height: 40%;
+    width: 30%;
+    top: 87%;
+    left: -16%;
+    direction: rtl;
+    font-family: BlenderConsensed;
+    font-size: 1.5vw;
+    z-index: 100;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    display: none;
+}
+
+
+.next-text-button:hover {
+    /* cursor: pointer; */
+    font-size: 2vw;
+}
+/* @keyframes example {
+    from {
+        align-items: center;
+        font-size: 4vw;
+    }
+    to {
+        align-items: flex-start;
+        font-size: 2vw;
+    }
+  } */
+
+
+
+  .tenth-page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230, 178, 186);
+    display: none;
+  }
+
+  .tenth-page-bubbletext {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    height: 80%;
+    width: 80%;
+    background-image: url("Assets/images/sixthPage/Rectangle 28.png");
+    background-size: 100% 100%;
+    /* display: none; */
+  }
+
+  .tenth-page-secondtitle {
+        position: absolute;
+        color: rgb(182, 139, 145);
+        font-family: Flamingo FM;
+        font-size: 2vw;
+        text-align: center;
+        right: 45%;
+        top: 20%;
+  }
+
+  /* .first-part-tenth {
+    display: none;
+  } */
+
+  .scale-place2 {
+    position: relative;
+    left: 55%;
+    top: 62%;
+    background-color: rgb(230, 178, 186);
+    height: 8%;
+    width: 20%;
+    color: white;
+    font-family: BlenderConsensed;
+    border-radius: 8px;
+    font-size: 2.5vw;
+    text-align: center;
+    border: solid 1px rgb(103, 57, 87);
+    cursor: default;
+}
+
+.scale-container {
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+}
+
+.e3 {
+ width: 25%;
+}
+
+.e7 {
+    width: 30%;
+}
+
+.e8 {
+    width: 25%;
+    right: 40%;
+    left: -50%;
+}
+
+.second-part-tenth {
+    display: none;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* body {
+    background: #F17563;
+    font-family: Open Sans;
+    font-size: 50px;
+  	color: #222;
+} */
+
+label {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+    width: 30%;
+    height: 40%;
+    position: relative;
+    left: 15%;
+    top: 20%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    background-image: url("Assets/images/sixthPage/Rectangle 28.png");
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Klugman FM;
+    font-size: 4vw;
+    color: rgb(103, 57, 87);
+    cursor: pointer;
+}
+
+    .card div {
+        position: absolute;
+        height: 80%;
+        width: 80%;
+        /* background: #FFF; */
+        text-align: center;
+        line-height: 200px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 2px;
+    }
+
+    .card .back {
+        /* background: #222; */
+        color: #000000;
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        font-family: BlenderConsensed;
+        font-size: 2vw;
+        line-height: 50px;
+        direction: rtl;
+        position: absolute
+    }
+
+label:hover .card {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+
+input {
+    display: none;
+}
+
+:checked + .card {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+    transform: rotateX(160deg);
+    -webkit-transform: rotateX(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
+
+.flipcard-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60%;
+    width: 80%;
+    /* border: solid black 2px; */
+    top: 30%;
+    left: 10%;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.second-part-second-title {
+    position: absolute;
+    color:  rgb(158, 114, 143);
+    font-family: Flamingo FM;
+    font-size: 2vw;
+    width: 45%;
+    text-align: center;
+    right: 28%;
+    top: 18%;
+}
+
+.third-part-tenth {
+    display: none;
+}
+
+.change {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: none;
+}
+
+.eleventh-page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230, 178, 186);
+    direction: rtl;
+    display: none;
+}
+
+.doctor {
+    position: absolute;
+    left: -2%;
+    bottom: 0;
+}
+
+.worker {
+    position: absolute;
+    right: -2%;
+    bottom: 0;
+}
+
+.people {
+    height: 50%;
+    width: 20%;
+}
+
+.conv-container {
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    /* border: solid black 2px; */
+    right: 15%;
+    top: 10%;
+    direction: ltr;
+    overflow-y: scroll;
+}
+
+.bubble {
+    position: relative;
+    background-image: url("Assets/images/eleventhPage/bubble.svg");
+    background-size: 100% 100%;
+    height: 40%;
+    width: 80%;
+    font-family: Flamingo FM;
+    font-size: 1.5vw;
+    padding: 50px 50px 50px 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+
+.b-worker {
+    transform: scaleX(-1);
+    /* position: absolute; */
+    right: 0;
+}
+.flip {
+    transform: scaleX(-1);
+}
+/* 
+.b-doctor {
+    position: absolute;
+    left: 0;
+} */
+
+.eleventh-page-title {
+    color: rgb(103, 57, 87);
+    font-family: Klugman FM;
+    font-size: 2.5vw;
+    position: absolute;
+    height: 30%;
+    width: 50%;
+    text-align: center;
+    right: -18%;
+    top: 10%;
+}
+
+.eleventh-page-title2 {
+    position: absolute;
+    color:  rgb(134, 102, 124);
+    font-family: Flamingo FM;
+    font-size: 1.5vw;
+    width: 45%;
+    text-align: center;
+    right: -15.5%;
+    top: 15%;
+}
+
+.next-button-eleventh {
+    position: absolute;
+    color: rgb(103, 57, 87);
+    font-family: Flamingo FM;
+    font-size: 1.5vw;
+    width: 45%;
+    text-align: center;
+    left: 25%;
+    bottom: 6%;
+}
+
+.next-button-eleventh:hover {
+   transform: scale(1.2);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.twelfth-page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(197, 153, 182);
+    direction: rtl;
+    display: none;
+}
+
+.twelfth-page-title {
+    position: absolute;
+    color: rgb(103, 57, 87);
+    font-family: Klugman FM;
+    font-size: 3.5vw;
+    width: 50%;
+    text-align: center;
+    right: 25%;
+    top: 10%;
+}
+
+.twelfth-page-text {
+    position: absolute;
+    color: rgb(103, 57, 87);
+    font-family: BlenderConsensed;
+    font-size: 2vw;
+    width: 80%;
+    right: 10%;
+    top: 30%;
+    text-align: center;
+}
+
+.audio-player {
+    position: absolute;
+    height: 5%;
+    width: 13%;
+    /* background-color: rgb(250, 208, 196); */
+    color: rgb(103, 57, 87);
+    font-family: BlenderConsensed;
+    font-size: 1.5vw;
+    text-align: center;
+    right: 1%;
+    top: 20%;
+    border-radius: 10px;
+}
+
+.attribute {
+    position: absolute;
+    /* height: 40%;
+    width: 90%; */
+}
+
+
+.flipcard-container2 {
+    height: 66%;
+    width: 90%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    border: solid 2px rgb(103, 57, 87);
+}
+
+.flip-small {
+    position: relative;
+    top: 0;
+    height: 10%;
+    width: 30%;
+}
+
+.attribute {
+    position: relative;
+    height: 15%;
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: BlenderConsensed;
+    font-size: 1.5vw;
+}
+
+.positive-container {
+    height: 66%;
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    right: 8%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.negative-container {
+    height: 66%;
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.positive {
+    border: dotted 2.5px rgba(108, 163, 71, 0.651);
+}
+
+.negative {
+    border: dotted 2.5px rgba(238, 69, 84, 0.651);
+}
+
+.next {
+    position: absolute;
+    color: rgb(103, 57, 87);
+    font-family: BlenderConsensed;
+    font-size: 2.5vw;
+    width: 5%;
+    text-align: center;
+    left: 4%;
+    bottom: 35%;
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+.next:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.last {
+    position: absolute;
+    color: rgb(103, 57, 87);
+    font-family: BlenderConsensed;
+    font-size: 2.5vw;
+    width: 4%;
+    text-align: center;
+    right: 5%;
+    bottom: 35%;
+    transition: all .2s ease-in-out;
+    text-align: center;
+    display: block;
+}
+
+.last:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.next-button-ninth {
+    position: absolute;
+    color: rgb(103, 57, 87);
+    font-family: BlenderConsensed;
+    font-size: 1.5vw;
+    width: 5%;
+    text-align: center;
+    /* left: 47.5%;
+     */
+    left: 3%;
+    bottom: 3%;
+    display: none;
+     transition: all .2s ease-in-out;
+}
+
+.next-button-ninth:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.icon-goal {
+    position: relative;
+    height: 20%;
+    width: 5%;
+}
+
+.next-button-twelfth {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: BlenderConsensed;
+    font-size: 1.5vw;
+    width: 15%;
+    height: 10%;
+    text-align: center;
+    left: 42.5%;
+    bottom: -15%;
+    border-radius: 12px;
+    background-color: rgb(103, 57, 87);
+    transition: all .2s ease-in-out;
+}
+
+.next-button-twelfth:hover {
+    background-color: rgb(103, 57, 87);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.credit {
+    position: absolute;
+    color: rgb(102, 83, 95);
+    font-family: BlenderConsensed;
+    font-size: 1vw;
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+    display: none;
+}
+
